@@ -9,15 +9,44 @@ export function IgoeLogoHeader() {
         padding: "12px 24px",
         display: "flex",
         alignItems: "center",
-        gap: 16,
+        justifyContent: "space-between",
         height: 64,
       }}
     >
-      <img
-        src="/Aptia-365-RGB-Light-bg_resize+for+WCP.89a04093fc33467fac75385534b60d84.png"
-        alt="Aptia 365"
-        style={{ height: 32, width: "auto", display: "block" }}
-      />
+      {/* Left: Logo */}
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <img
+          src="/fplak.jpg"
+          alt="Flexplan"
+          style={{ height: 40, width: "auto", display: "block" }}
+        />
+      </div>
+
+      {/* Center: Contact Info */}
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
+        <div style={{ fontSize: 14, fontWeight: 500, color: "#1f2937" }}>
+          918-524-6350
+        </div>
+        <div style={{ fontSize: 12, color: "#6b7280" }}>
+          jennifer@flexplanadmin.com
+        </div>
+      </div>
+
+      {/* Right: Login Link */}
+      <div>
+        <a
+          href="#login"
+          style={{
+            fontSize: 16,
+            fontWeight: 500,
+            color: "#1f2937",
+            textDecoration: "none",
+            cursor: "pointer",
+          }}
+        >
+          Login
+        </a>
+      </div>
     </header>
   );
 }

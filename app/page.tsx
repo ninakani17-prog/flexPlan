@@ -109,7 +109,7 @@ export default function LoginPage() {
           <style>{`
             *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
             body{font-family:'Segoe UI',Arial,sans-serif;background:#fff;color:#222;min-height:100vh;display:flex;flex-direction:column;}
-            header{display:flex;align-items:center;gap:16px;padding:12px 24px;border-bottom:1px solid #e5e7eb;background:#fff;}
+            header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 24px;border-bottom:1px solid #e5e7eb;background:#fff;}
             .logo-img{height:32px;width:auto;display:block;}
             .header-title{font-size:0.97rem;font-weight:400;color:#444;}
             main{flex:1;display:flex;flex-direction:row;align-items:flex-start;justify-content:flex-start;padding:56px 16px 40px;}
@@ -194,13 +194,40 @@ export default function LoginPage() {
             .footer-sitemap a:hover{text-decoration:underline;}
             @media(max-width:500px){main{padding:32px 12px 28px;}.btn{width:100%;justify-content:center;}.footer-links{gap:7px 14px;}}
           `}</style>
-          <header>
-            <img
-              className="logo-img"
-              src="/Aptia-365-RGB-Light-bg_resize+for+WCP.89a04093fc33467fac75385534b60d84.png"
-              alt="Aptia 365"
-            />
-            <span className="header-title">Login</span>
+          <header style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            padding: "12px 24px",
+            borderBottom: "1px solid #e5e7eb",
+            background: "#fff"
+          }}>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <img
+                src="/fplak.jpg"
+                alt="Flexplan"
+                style={{ height: 40, width: "auto", display: "block" }}
+              />
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
+              <div style={{ fontSize: 14, fontWeight: 500, color: "#1f2937" }}>
+                918-524-6350
+              </div>
+              <div style={{ fontSize: 12, color: "#6b7280" }}>
+                jennifer@flexplanadmin.com
+              </div>
+            </div>
+            <div>
+              <span style={{
+                fontSize: 16,
+                fontWeight: 500,
+                color: "#1f2937",
+                textDecoration: "none",
+                cursor: "pointer"
+              }}>
+                Login
+              </span>
+            </div>
           </header>
           {/* Wrap main and footer in a fragment to ensure valid JSX */}
           <>
