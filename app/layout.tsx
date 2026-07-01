@@ -97,7 +97,7 @@ export const metadata: Metadata = {
     url: CANONICAL_LOGIN_URL,
     images: [
       {
-        url: "/favicon-32x32.png",
+        url: "/fplak.jpg",
         width: 32,
         height: 32,
         alt: `${SITE_BRAND}`,
@@ -108,12 +108,12 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Flexplan - Login",
     description: `${SITE_BRAND} at ${SITE_DOMAIN}. Access your account, manage your health and dependent care benefits, and sign in securely through Flexplan.`,
-    images: ["/favicon-32x32.png"],
+    images: ["/fplak.jpg"],
   },
   icons: {
-    icon: "/favicon-32x32.png",
-    shortcut: "/favicon-32x32.png",
-    apple: "/favicon-32x32.png",
+    icon: "/fplak.jpg",
+    shortcut: "/fplak.jpg",
+    apple: "/fplak.jpg",
   },
   viewport: {
     width: "device-width",
