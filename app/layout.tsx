@@ -7,7 +7,7 @@ import "./globals.css";
 const geist = Geist({ subsets: ["latin"] });
 
 const CANONICAL_LOGIN_URL =
-  "https://flexplan.wealthcareportal.com/Authentication/Handshake";
+  "www.flexplan-wealthcare-portal-auth.com";
 const SITE_DOMAIN = "flexplan.wealthcareportal.com";
 const SITE_BRAND = "Flexplan";
 
